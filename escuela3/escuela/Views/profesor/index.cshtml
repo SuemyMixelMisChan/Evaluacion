@@ -1,0 +1,38 @@
+﻿@model List<escuela.Models.ViewModels.ListProfesorViewModel>
+@{
+    ViewBag.Title = "Profesores";
+}
+
+<h2>@ViewBag.Title</h2>
+<div class="row" style="text-align:right; padding:5px">
+    <a href="~/profesor/NUEVO" class="btn btn-primary">NUEVO</a>
+    <a href="~/alumnos/NUEVO" class="btn btn-primary">AGREGAR ALUMNO</a>
+</div>
+
+<div class="row">
+    <dv class="col-md-12">
+        <table class="table">
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+                @foreach (var olemento in Model)
+                { 
+                   <tr>
+                    <td>@olemento.Idprofesor</td>
+                    <td>@olemento.Nombre</td>
+                    <td>@olemento.Apellido</td>
+                    <td>
+                        <a class="btn btn-default" href="~/profesor/Editar/@olemento.Idprofesor">EDITAR</a>
+                        <a class="btn btn-danger" href="~/profesor/Eliminar/@olemento.Idprofesor">ELIMINAR</a>
+
+                    </td>
+                   </tr>
+                }
+            </table>
+
+    </dv>
+
+</div>
+

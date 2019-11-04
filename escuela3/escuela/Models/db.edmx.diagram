@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f4415054935d49d4bb133544b95f45b1" Name="Diagram1">
+        <EntityTypeShape EntityType="escuelaModel.actividades" Width="1.5" PointX="6" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.alumnos" Width="1.5" PointX="3.75" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.asignatura" Width="1.5" PointX="7.125" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.asistencia" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.calificaciones" Width="1.5" PointX="8.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.curso" Width="1.5" PointX="6" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.grupo" Width="1.5" PointX="0.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.profesor" Width="1.5" PointX="3.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="escuelaModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <AssociationConnector Association="escuelaModel.FK_actividades_profesor" ManuallyRouted="false" />
+        <AssociationConnector Association="escuelaModel.FK__curso__alumnos_i__1CF15040" ManuallyRouted="false" />
+        <AssociationConnector Association="escuelaModel.FK__curso__asignatur__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="escuelaModel.FK__asistenci__curso__20C1E124" ManuallyRouted="false" />
+        <AssociationConnector Association="escuelaModel.FK__asistenci__grupo__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="escuelaModel.FK__calificac__curso__24927208" ManuallyRouted="false" />
+        <AssociationConnector Association="escuelaModel.FK__curso__grupo_idg__1B0907CE" ManuallyRouted="false" />
+        <AssociationConnector Association="escuelaModel.FK_curso_profesor" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
